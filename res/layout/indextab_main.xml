@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/OutLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/poiTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/index_tab_main_top" />
+
+    <FrameLayout
+        android:id="@+id/framlayoout_index"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#fff" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homeVp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</LinearLayout>
